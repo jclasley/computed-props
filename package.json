@@ -1,0 +1,24 @@
+{
+  "name": "computed-props",
+  "version": "1.0.0",
+  "description": "Lightweight library to allow for use of computed properties",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests required\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jclasley/computed-props.git"
+  },
+  "keywords": [
+    "computed",
+    "props",
+    "properties"
+  ],
+  "author": "Jon Lasley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jclasley/computed-props/issues"
+  },
+  "homepage": "https://github.com/jclasley/computed-props#readme"
+}
