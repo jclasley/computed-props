@@ -1,6 +1,6 @@
 {
   "name": "computed-props",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Lightweight library to allow for use of computed properties",
   "main": "index.js",
   "scripts": {
