@@ -12,7 +12,7 @@ const compute = function(computedObj) {
       const prop = props[0][0];
       const cb = props[0][1].bind(source)
       // set the source prop so it exists after execution, otherwise only exists on lookup
-      source[prop] = cb();
+      source[prop] = cb.call(source); // strange behavior if not called
       let handler = {
         get: function(target, property, receiver) {
           if (property === prop) {
