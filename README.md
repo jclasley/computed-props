@@ -64,7 +64,7 @@ The computed property updates on lookup, which means that we  A) retain normal o
           ageLastYear: 25,
           hobby: "trying to break JS",
           name: "Alexia",
-          nameBackwards: "Aixela"
+          nameBackwards: "Aixela" // notice how this is computed based on the newly updated name property?
         }
         */
 ```
