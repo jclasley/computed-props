@@ -1,3 +1,4 @@
+[![npm version](https://img.shields.io/node/v/computed-props?label=computed-props)](https://www.npmjs.com/package/computed-props)
 # computed-props
 `npm install computed-props`
 ```js
