@@ -82,35 +82,37 @@ const compute = function(computedObj) {
   }
 }
 
-o = {
-  a: 1
-};
-o = compute({
-  b: function() {
-    return this.a + 1
-  },
-  c: function() {
-  	return this.a * 2
-  }
-})(o)
-console.log(o instanceof Object)
-o.a = 2;
-console.log(o);
-o.a *= 3;
-console.log(o);
+module.exports = compute;
 
-let Person = function(age) {
-  this.ages = {
-    age
-  };
-  this.ages = compute({
-    agenextyear: function() {
-      return this.age + 1
-    }
-  })(this.ages);
-}
+// o = {
+//   a: 1
+// };
+// o = compute({
+//   b: function() {
+//     return this.a + 1
+//   },
+//   c: function() {
+//   	return this.a * 2
+//   }
+// })(o)
+// console.log(o instanceof Object)
+// o.a = 2;
+// console.log(o);
+// o.a *= 3;
+// console.log(o);
 
-let me = new Person(26);
-console.log(me.ages.agenextyear)
-me.ages.age = 27;
-console.log(me.ages);
+// let Person = function(age) {
+//   this.ages = {
+//     age
+//   };
+//   this.ages = compute({
+//     agenextyear: function() {
+//       return this.age + 1
+//     }
+//   })(this.ages);
+// }
+
+// let me = new Person(26);
+// console.log(me.ages.agenextyear)
+// me.ages.age = 27;
+// console.log(me.ages);
