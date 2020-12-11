@@ -1,5 +1,9 @@
 /*
+created by Jon Lasley
+https://github.com/jclasley/computed-props
+
 ============== HOW TO USE THE COMPUTE FUNCTION ===================
+
 
 ------ Use on plain objects ------------
 1. Create the object with all standard (non-computed) properties
@@ -83,36 +87,3 @@ const compute = function(computedObj) {
 }
 
 module.exports = compute;
-
-// o = {
-//   a: 1
-// };
-// o = compute({
-//   b: function() {
-//     return this.a + 1
-//   },
-//   c: function() {
-//   	return this.a * 2
-//   }
-// })(o)
-// console.log(o instanceof Object)
-// o.a = 2;
-// console.log(o);
-// o.a *= 3;
-// console.log(o);
-
-// let Person = function(age) {
-//   this.ages = {
-//     age
-//   };
-//   this.ages = compute({
-//     agenextyear: function() {
-//       return this.age + 1
-//     }
-//   })(this.ages);
-// }
-
-// let me = new Person(26);
-// console.log(me.ages.agenextyear)
-// me.ages.age = 27;
-// console.log(me.ages);
