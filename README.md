@@ -1,5 +1,6 @@
 # computed-props
 A library for using traditional computed properties in JS
+The computed property updates on lookup, which means that we  A) retain normal object shape B) don't have to invoke anything and C) can use the computed property in expected ways.
 
 ## HOW TO USE THE COMPUTE FUNCTION
 
