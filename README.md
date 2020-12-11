@@ -1,6 +1,6 @@
 [![npm version](https://img.shields.io/node/v/computed-props?label=computed-props)](https://www.npmjs.com/package/computed-props)
 # computed-props
-`npm install computed-props`
+`npm i computed-props`
 ```js
 const compute = require('computed-props');
 ```
@@ -8,7 +8,22 @@ A library for using traditional computed properties in JS
 
 The computed property updates on lookup, which means that we  A) retain normal object shape B) don't have to invoke anything and C) can use the computed property in expected ways.
 
-## HOW TO USE THE COMPUTE FUNCTION
+##### - [Issues](#issues)
+##### - [Functionality](#functionality)
+##### - [How do I use this?](#the-compute-function)
+
+
+## ISSUES
+#### Known issues
+Does not yet support use of the spread operator when extending the computed object
+
+Please submit issues as you discover them
+
+## FUNCTIONALITY
+
+I would be delighted to know how you use the computed properties and the cool things you create! Feel free to submit your examples to the wiki or email them to me at jon.lasley@gmail.com
+
+## THE COMPUTE FUNCTION
 
 ----------------------------
 #### Use on plain objects 
