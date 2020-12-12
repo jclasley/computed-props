@@ -1,5 +1,5 @@
 [![npm version](https://img.shields.io/node/v/computed-props?label=computed-props)](https://www.npmjs.com/package/computed-props)
-![npm downloads](https://img.shields.io/npm/dm/computed-props)
+[![npm downloads](https://img.shields.io/npm/dm/computed-props)](https://www.npmjs.com/package/computed-props)
 # computed-props
 `npm i computed-props`
 ```js
