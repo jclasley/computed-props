@@ -10,15 +10,24 @@ const compute = function(computedObj) {
     const recurseProxies = function(source, props) {
     	if (!props.length) { return source; }
       const prop = props[0][0];
-      const cb = props[0][1].bind(source)
+      const cb = props[0][1].bind(source);
       // set the source prop so it exists after execution, otherwise only exists on lookup
-      source[prop] = cb.call(source); // strange behavior if not called
+      source[prop] = cb.call(source);
       let handler = {
         get: function(target, property, receiver) {
           if (property === prop) {
             target[prop] = cb();
+            delete receiver[prop]; // prevent from performing actions on itself
+            return target[prop] = cb();
           }
           return Reflect.get(...arguments);
+        },
+        set: function(target, property, value, receiver) {
+        	if (property === prop) {
+          	console.log(`Attempted to override ${cb} with ${value} -- prevented`);
+            return true;
+          }
+          return Reflect.set(...arguments);
         }
       }
       source = new Proxy(source, handler);
