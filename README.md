@@ -1,4 +1,4 @@
-[![npm version](https://img.shields.io/node/v1.0.9/computed-props?label=computed-props)](https://www.npmjs.com/package/computed-props)
+[![npm version](https://img.shields.io/node/v/computed-props?label=computed-props)](https://www.npmjs.com/package/computed-props)
 ![npm downloads](https://img.shields.io/npm/dm/computed-props)
 # computed-props
 `npm i computed-props`
