@@ -101,5 +101,14 @@ let Person = function(age) {
       return this.age + 1
     }
   })(this.ages);
+  
+  // alternatively:
+  /*
+  this.ages = compute({
+    agenextyear: function() {
+      return this.age + 1;
+    }
+  })({age})
+  */
 }
 ```
